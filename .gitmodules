@@ -1,0 +1,54 @@
+[submodule "rhasspy-hermes"]
+	path = rhasspy-hermes
+	url = https://github.com/rhasspy/rhasspy-hermes.git
+[submodule "rhasspy-dialogue-hermes"]
+	path = rhasspy-dialogue-hermes
+	url = https://github.com/rhasspy/rhasspy-dialogue-hermes.git
+[submodule "rhasspy-fuzzywuzzy"]
+	path = rhasspy-fuzzywuzzy
+	url = https://github.com/rhasspy/rhasspy-fuzzywuzzy.git
+[submodule "rhasspy-fuzzywuzzy-hermes"]
+	path = rhasspy-fuzzywuzzy-hermes
+	url = https://github.com/rhasspy/rhasspy-fuzzywuzzy-hermes.git
+[submodule "rhasspy-homeassistant-hermes"]
+	path = rhasspy-homeassistant-hermes
+	url = https://github.com/rhasspy/rhasspy-homeassistant-hermes.git
+[submodule "rhasspy-microphone-cli-hermes"]
+	path = rhasspy-microphone-cli-hermes
+	url = https://github.com/rhasspy/rhasspy-microphone-cli-hermes.git
+[submodule "rhasspy-microphone-pyaudio-hermes"]
+	path = rhasspy-microphone-pyaudio-hermes
+	url = https://github.com/rhasspy/rhasspy-microphone-pyaudio-hermes.git
+[submodule "rhasspy-nlu"]
+	path = rhasspy-nlu
+	url = https://github.com/rhasspy/rhasspy-nlu.git
+[submodule "rhasspy-nlu-hermes"]
+	path = rhasspy-nlu-hermes
+	url = https://github.com/rhasspy/rhasspy-nlu-hermes.git
+[submodule "rhasspy-profile"]
+	path = rhasspy-profile
+	url = https://github.com/rhasspy/rhasspy-profile.git
+[submodule "rhasspy-remote-http-hermes"]
+	path = rhasspy-remote-http-hermes
+	url = https://github.com/rhasspy/rhasspy-remote-http-hermes.git
+[submodule "rhasspy-server-hermes"]
+	path = rhasspy-server-hermes
+	url = https://github.com/rhasspy/rhasspy-server-hermes.git
+[submodule "rhasspy-speakers-cli-hermes"]
+	path = rhasspy-speakers-cli-hermes
+	url = https://github.com/rhasspy/rhasspy-speakers-cli-hermes.git
+[submodule "rhasspy-supervisor"]
+	path = rhasspy-supervisor
+	url = https://github.com/rhasspy/rhasspy-supervisor.git
+[submodule "rhasspy-tts-cli-hermes"]
+	path = rhasspy-tts-cli-hermes
+	url = https://github.com/rhasspy/rhasspy-tts-cli-hermes.git
+[submodule "rhasspy-wake-pocketsphinx-hermes"]
+	path = rhasspy-wake-pocketsphinx-hermes
+	url = https://github.com/rhasspy/rhasspy-wake-pocketsphinx-hermes.git
+[submodule "rhasspy-wake-porcupine-hermes"]
+	path = rhasspy-wake-porcupine-hermes
+	url = https://github.com/rhasspy/rhasspy-wake-porcupine-hermes.git
+[submodule "rhasspy-wake-snowboy-hermes"]
+	path = rhasspy-wake-snowboy-hermes
+	url = https://github.com/rhasspy/rhasspy-wake-snowboy-hermes.git
