@@ -1,8 +1,14 @@
 SHELL := bash
 PIP_INSTALL ?= install
 DOWNLOAD_DIR = download
+REQUIREMENTS = $(shell find . -mindepth 2 -maxdepth 2 -type f -name requirements.txt)
+
+.PHONY: venv clean update-bin downloads
 
 all: venv
+
+clean:
+	rm -rf .venv/
 
 venv: requirements.txt update-bin downloads
 	scripts/create-venv.sh

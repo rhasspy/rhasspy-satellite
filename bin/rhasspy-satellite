@@ -87,7 +87,7 @@ fi
 conf_path="${profile_dir}/supervisord.conf"
 echo "Generating ${conf_path}"
 
-"${this_dir}/voltron-run" \
+"${this_dir}/add-python-paths" \
     python3 -m rhasspysupervisor \
     --profile "${profile_name}" \
     --user-profiles "${user_profiles}" \
@@ -95,7 +95,7 @@ echo "Generating ${conf_path}"
     --debug
 
 # Run web server
-"${this_dir}/voltron-run" \
+"${this_dir}/add-python-paths" \
     python3 -m rhasspyserver_hermes \
     --profile "${profile_name}" \
     --user-profiles "${user_profiles}" \

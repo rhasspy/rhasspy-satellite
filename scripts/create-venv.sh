@@ -17,18 +17,20 @@ download="${src_dir}/download"
 # -----------------------------------------------------------------------------
 
 # Create virtual environment
-echo "Creating virtual environment at ${venv}"
-rm -rf "${venv}"
-python3 -m venv "${venv}"
+if [[ ! -d "${venv}" ]]; then
+    echo "Creating virtual environment at ${venv}"
+    python3 -m venv "${venv}"
+fi
+
 source "${venv}/bin/activate"
 
 # Install Python dependencies
 echo "Installing Python dependencies"
 pip3 ${PIP_INSTALL} --upgrade pip
-pip3 ${PIP_INSTALL} wheel setuptools
-pip3 ${PIP_INSTALL} "${download}/snowboy-1.3.0.tar.gz"
+pip3 ${PIP_INSTALL} --upgrade wheel setuptools
+pip3 ${PIP_INSTALL} --upgrade "${download}/snowboy-1.3.0.tar.gz"
 
-pip3 ${PIP_INSTALL} -r requirements.txt
+pip3 ${PIP_INSTALL} --upgrade -r requirements.txt
 
 # -----------------------------------------------------------------------------
 

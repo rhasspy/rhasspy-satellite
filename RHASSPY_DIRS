@@ -10,6 +10,7 @@ rhasspy-nlu-hermes
 rhasspy-profile
 rhasspy-remote-http-hermes
 rhasspy-server-hermes
+rhasspy-silence
 rhasspy-speakers-cli-hermes
 rhasspy-supervisor
 rhasspy-tts-cli-hermes
