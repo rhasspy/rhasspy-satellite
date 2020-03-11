@@ -28,7 +28,14 @@ source "${venv}/bin/activate"
 echo "Installing Python dependencies"
 pip3 ${PIP_INSTALL} --upgrade pip
 pip3 ${PIP_INSTALL} --upgrade wheel setuptools
-pip3 ${PIP_INSTALL} --upgrade "${download}/snowboy-1.3.0.tar.gz"
+
+if [[ -s "${download}/snowboy-1.3.0.tar.gz" ]]; then
+    pip3 ${PIP_INSTALL} --upgrade "${download}/snowboy-1.3.0.tar.gz"
+fi
+
+if [[ -s "${download}/pocketsphinx-python.tar.gz" ]]; then
+    pip3 ${PIP_INSTALL} --upgrade "${download}/pocketsphinx-python.tar.gz"
+fi
 
 pip3 ${PIP_INSTALL} --upgrade -r requirements.txt
 
