@@ -1,0 +1,23 @@
+site_name: Rhasspy
+theme: readthedocs
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Services: services.md
+  - Tutorials: tutorials.md
+  - Usage: usage.md
+  - Profiles: profiles.md
+  - Training: training.md
+  - Hardware: hardware.md
+  - Audio Input: audio-input.md
+  - Audio Output: audio-output.md
+  - Wake Word: wake-word.md
+  - Command Listener: command-listener.md
+  - Speech to Text: speech-to-text.md
+  - Intent Recognition: intent-recognition.md
+  - Intent Handling: intent-handling.md
+  - Text to Speech: text-to-speech.md
+  - Reference: reference.md
+  - Development: development.md
+  - License: license.md
+  - About: about.md

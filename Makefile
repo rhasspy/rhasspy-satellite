@@ -3,9 +3,9 @@ PIP_INSTALL ?= install
 DOWNLOAD_DIR = download
 REQUIREMENTS = $(shell find . -mindepth 2 -maxdepth 2 -type f -name requirements.txt)
 
-.PHONY: venv clean update-bin downloads
+.PHONY: venv clean update-bin downloads docs
 
-all: venv
+all: venv docs
 
 clean:
 	rm -rf .venv/
@@ -17,11 +17,16 @@ venv: requirements.txt update-bin downloads
 # Rhasspy libraries will be used from the submodule source code.
 requirements.txt: $(REQUIREMENTS)
 	cat $^ | grep -v '^rhasspy' | sort | uniq > $@
+	echo 'mkdocs==1.0.4' >> $@
 
 # Copy submodule scripts to shared bin directory.
 update-bin:
 	$(shell find . -mindepth 3 -maxdepth 3 -type f -name 'rhasspy-*' -path './rhasspy*/bin/*' -exec cp '{}' bin/ \;)
 	chmod +x bin/*
+
+docs:
+	scripts/download-docs.sh
+	scripts/build-docs.sh
 
 # -----------------------------------------------------------------------------
 # Downloads
