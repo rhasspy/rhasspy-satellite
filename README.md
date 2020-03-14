@@ -7,7 +7,7 @@ Install dependencies:
 ```bash
 sudo apt-get install \
      python3 python3-dev python3-pip python3-venv \
-     build-essential git curl swig portaudio19-dev ca-certificates \
+     build-essential git curl swig portaudio19-dev ca-certificates patchelf \
      mosquitto supervisor alsa-utils sox espeak flite
 ```
 
