@@ -1,5 +1,7 @@
 # Rhasspy Satellite
 
+Virtual environment installation of [Rhasspy](https://github.com/rhasspy/rhasspy-voltron) intended for [satellites](https://rhasspy.github.io/rhasspy-voltron/tutorials#server-with-satellites), such as a Raspberry Pi Zero.
+
 ## Installation
 
 Install dependencies:
