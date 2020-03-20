@@ -55,3 +55,6 @@
 [submodule "rhasspy-silence"]
 	path = rhasspy-silence
 	url = https://github.com/rhasspy/rhasspy-silence.git
+[submodule "rhasspy-rasa-nlu-hermes"]
+	path = rhasspy-rasa-nlu-hermes
+	url = https://github.com/rhasspy/rhasspy-rasa-nlu-hermes.git
