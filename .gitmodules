@@ -58,3 +58,6 @@
 [submodule "rhasspy-rasa-nlu-hermes"]
 	path = rhasspy-rasa-nlu-hermes
 	url = https://github.com/rhasspy/rhasspy-rasa-nlu-hermes.git
+[submodule "rhasspy-wake-precise-hermes"]
+	path = rhasspy-wake-precise-hermes
+	url = https://github.com/rhasspy/rhasspy-wake-precise-hermes.git
